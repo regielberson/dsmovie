@@ -16,23 +16,21 @@ public class Score {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private ScorePK id = new ScorePK();
-
 	private Double value;
+	
+	
 
 	public Score() { }
 
 
 
 	public void setMovie (Movie movie ) {
-
 		id.setMovie(movie);
-
 	}
 
 
 	public void setUser(User user) {
-
-		id.setMovie(null);
+		id.setUser(user);
 	}
 
 	public ScorePK getId() {
@@ -52,7 +50,10 @@ public class Score {
 
 	public void setValue(Double value) {
 		this.value = value;
-	}	 
+	}
+
+
+
 
 
 
